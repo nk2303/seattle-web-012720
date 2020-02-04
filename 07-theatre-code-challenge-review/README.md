@@ -2,6 +2,8 @@
 
 Any theater (or should I say *theatre*) geek knows that every performance is a unique, ephemeral snowflake of an experience.  Let's make a system to keep track of all the shows you've seen, and which venues you saw them in.
 
+Theatre -< Performances >- Musicals
+
 ## Notes
 
 Your goal is to build out all of the methods listed in the deliverables.
