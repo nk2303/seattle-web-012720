@@ -1,0 +1,11 @@
+require_relative 'config/environment.rb'
+
+desc "Print hello"
+task :hello_world do 
+    puts "Hello World"
+end
+
+desc "Lauches a console session"
+task :console do
+    Pry.start
+end
