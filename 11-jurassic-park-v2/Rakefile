@@ -1,0 +1,18 @@
+require_relative 'config/environment.rb'
+
+desc "Print hello"
+task :hello_world do 
+    puts "Hello World"
+end
+
+desc "Seeds the DB with some visitors, dinasours, and food"
+task :seed do 
+    sh 'rm jurassic_park.db'
+    sh 'ruby seeds.rb'
+end
+
+desc "Lauches a console session"
+task :console do
+    [:seed]
+    Pry.start
+end
