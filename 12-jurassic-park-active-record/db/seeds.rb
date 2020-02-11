@@ -1,4 +1,4 @@
-require_relative 'config/environment.rb'
+# require_relative 'config/environment.rb'
 
 #CREATE -> Create tables : Creating new information for the schema.
 # Dinosaur.create_table
@@ -14,7 +14,7 @@ require_relative 'config/environment.rb'
 10.times do
     #CREATE for our data
     # Visitor.new(Faker::FunnyName.name, Random.rand(100), Random.rand(6.0))
-    Visitor.create(Faker::FunnyName.name, Random.rand(100), Random.rand(6.0))
+    Visitor.create(name: Faker::FunnyName.name, age: Random.rand(100), height: Random.rand(6.0))
 end
 
 dinos = [ "Tyrannosaurus Rex", 
@@ -33,7 +33,7 @@ dinos.each do |dino_name|
     #CREATE
     # sql = "INSERT INTO dinosaurs(name, age, height) VALUES(?,?,?)"
     # DB.execute(sql, dino_name , Random.rand(100000000), Random.rand(100.00))
-    Dinosaur.create(dino_name , Random.rand(100000000), Random.rand(100.00))
+    Dinosaur.create(name: dino_name , age: Random.rand(100000000), height: Random.rand(100.00))
 end
 
 foods = ["hotdogs", "cotton_candy", "burgers", "fries", "fried_chicken"]
@@ -41,7 +41,9 @@ foods.each do |food_name|
     #CREATE
     # sql = "INSERT INTO foods(name) VALUES(?)"
     # DB.execute(sql, food_name)
-    Food.create(food_name)
+    Food.create(name: food_name, calories: 100, age: 0, price: 3.40)
 end
+
+FoodsVisitor.create(visitor_id: Visitor.all.sample.id, food_id: Food.all.sample.id)
 
 # binding.pry

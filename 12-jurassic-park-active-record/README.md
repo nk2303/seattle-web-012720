@@ -1,9 +1,20 @@
 ## Questions
-- What if I make a mistake in AR -> create a table and 
-  forget to create a table ( migrations?)
-- Project, there are going to be a lot of join tables ( Mod 1 3 models)
-- Migrations? WHAT ARE THEEEY.
-- go through the high level walkthrough( with active record).
+- practice writing a method 
+- dinosour eating a visitor
+  - Dinosaur and Visitor
+  - DELETE for a visitor
+  - Dinosaurs
+- visitor orders food
+  - visitors and foods models
+  - CREATE
+  - FoodsVisitors
+- Can we also physically draw what the relationship looks like
+  - and how that translates
+- the whole : how the environment file works with the whole project
+- organizing some of your mehods : 
+  - helper methods that work with a specific table
+- breif review of join tables and what they do and setting them up.
+- how to do a rollback
 
 #### ORM Review:
 - DB -> Domain/Project

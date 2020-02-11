@@ -17,4 +17,7 @@ task :console do
     [:seed]
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     Pry.start
+
+    # user 1
+    # FoodsVisitor.create()
 end

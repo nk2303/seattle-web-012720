@@ -1,6 +1,20 @@
 class Dinosaur < ActiveRecord::Base
     has_many :dinosaurs_visitors
     has_many :visitors,  through: :dinosaurs_visitors
+    # dependant_destroy -> 
+
+    def eat_visitor(visitor)
+        # check to see if the visitor is alive
+        # if they are alive -> destroy them
+        # update kill count for dinosaur
+        if visitor
+            visitor.destroy
+            self.kill_count ||= 0
+            current_kill_count = self.kill_count 
+            current_kill_count += 1
+            self.update(kill_count: current_kill_count)
+        end
+    end
    # Dinosaur  DinosaursVisitor Visitors
     # @@all = [ ]
 
