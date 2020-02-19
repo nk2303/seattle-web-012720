@@ -24,14 +24,14 @@
 | CRUD Letter | RESTful Route           | Controller Action |
 |-------------|-------------------------|-------------------|
 | C(reate)    |                         | create            |
-| R(ead)      | GET /dishes             | index             |
-| R(ead)      | GET  /dishes/:id        | show              |
+| R(ead)      |                         | index             |
+| R(ead)      |                         | show              |
 | U(pdate)    |                         | update            |
 | D(elete)    |                         | destroy           |
 
 
 ## SWBATs:
-[ ] describe RESTful conventions 
+- [ ] describe RESTful conventions 
 [ ] describe Sinatra and what we use it for
 [ ] implement Corneal
 [ ] define MVC pattern 
@@ -44,15 +44,11 @@
 
 
 ## Deliverables
-    You’ve taken a role as Flatirons new Lunch person. 
-    Your first task is to build a menu application that can be viewed in the browser 
-    using the existing database of pre-approved meals. 
-    You’d like to keep the menu up to date so you make a note to add functionality that will update 
-    existing menu items and add new ones.
+    You’ve taken a role as Flatirons new Lunch person. Your first task is to build a menu application that can be viewed in the browser using the existing database of pre-approved meals. You’d like to keep the menu up to date so you make a note to add functionality that will update existing menu items and add new ones.
 
    ### Users should be able to....
-   - [x] view all menu items at once
-   - [x] view information about a specific item using its ID
+   - [] view all menu items at once
+   - [] view information about a specific item using its ID
    - [] create new menu items (with postman)
    - [] update existing menu items (with postman)
    - [] delete existing menu items (with postman)

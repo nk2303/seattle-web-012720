@@ -7,7 +7,7 @@ end
 get "/dogs" do
     "<html>
     <head>
-        <deta charset='utf-8'/>
+        <meta charset='utf-8' />
     </head>
     <body>
         #{"🐕" * 500}
@@ -19,7 +19,7 @@ end
 get "/cats" do
     "<html>
     <head>
-        <deta charset='utf-8'/>
+        <meta charset='utf-8' />
     </head>
     <body>
         #{"🐈" * 1000}
@@ -31,7 +31,7 @@ end
 get "/birbs" do
     "<html>
     <head>
-        <deta charset='utf-8'/>
+        <meta charset='utf-8' />
     </head>
     <body>
         #{"🐦" * 1500}

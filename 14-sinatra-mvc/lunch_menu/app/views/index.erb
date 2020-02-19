@@ -1,0 +1,7 @@
+<h1>All items</h1>
+
+<% @dishes.each do |dish|%>
+<h4><%= dish.name %></h4>
+<h5><%=dish.description %></h5>
+<h5>$<%=dish.price %></h5>
+<%end%>
