@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
    end
 
   post '/dishes' do
-   dish = Dish.create(params)
+   dish = Dish.create(params )
    redirect "/dishes/#{dish.id}"
   end 
  
