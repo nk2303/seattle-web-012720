@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meat: MyString
+  spicy: 1
+  zest: 1
+
+two:
+  meat: MyString
+  spicy: 1
+  zest: 1
