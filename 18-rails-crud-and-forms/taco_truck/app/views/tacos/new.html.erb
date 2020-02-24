@@ -1,0 +1,8 @@
+<h1>new</h1>
+
+<%= form_for @taco do |f|%>
+    Meat: <%= f.text_field :meat %> <br />
+    Zest?: <%= f.number_field :zest %> <br />
+    Spice: <%= f.number_field :spicy %> <br />
+    <%= f.submit %>
+<%end%>
