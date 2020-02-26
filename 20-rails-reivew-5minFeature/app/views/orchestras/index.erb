@@ -1,0 +1,6 @@
+<% @orchestras.each do |orchestra| %>
+    <h1><%= link_to orchestra.name,  orchestra%></h1><br>
+<% end %>
+
+
+<%= link_to "Create Orchestra", new_orchestra_path %>

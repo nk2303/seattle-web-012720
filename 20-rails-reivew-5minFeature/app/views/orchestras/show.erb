@@ -1,0 +1,10 @@
+<h1><%= @orchestra.name %></h1><br>
+<h3><%= @orchestra.conductor.name %></h3><br>
+<div><%= @orchestra.classification %></div><br>
+
+<% @orchestra.members.each do |member| %>
+    <li><%= member.name  %></li>
+<% end %>
+
+
+<%= link_to "Home", orchestras_path %>

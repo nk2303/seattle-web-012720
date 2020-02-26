@@ -1,0 +1,20 @@
+<h1>New Member</h1>
+
+
+<%= form_for @member do |f|%>
+<%= f.label :name%>
+<%= f.text_field :name%>
+
+
+<%= f.label :orchestras %>
+<%= f.collection_check_boxes :orchestra_ids, Orchestra.all, :id, :name %>
+
+<%= f.submit "Submit"%>
+<% end %>
+<% if flash[:notice] %>
+<% flash[:notice].each do |message|%>
+<%= message %>
+<%end%>
+<% end %>
+
+

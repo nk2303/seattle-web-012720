@@ -1,0 +1,2 @@
+class OrchestramembersController < ApplicationController
+end

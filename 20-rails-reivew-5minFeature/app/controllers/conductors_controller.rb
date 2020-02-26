@@ -1,0 +1,2 @@
+class ConductorsController < ApplicationController
+end
