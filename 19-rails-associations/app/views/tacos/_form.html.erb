@@ -1,0 +1,11 @@
+<%= form_for @taco do |f| %>
+  Meat: <%= f.text_field :meat %><br />
+  Zest : <%= f.number_field  :zest %><br />
+  Spict : <%= f.number_field  :spicy %><br />
+  Truck: <%= f.collection_select :truck_id, @trucks, :id, :name %><br />
+<%= f.submit %>
+  <% end %>
+
+    <% if flash[:messages] %>
+    <%= flash[:messages] %>
+  <% end %>
