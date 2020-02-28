@@ -1,0 +1,7 @@
+ <div>Blend name: <%= @brew.blend_name %></div> <br />
+    <div>Origin: <%= @brew.origin%></div> <br />
+    <div>Notes: <%= @brew.notes%></div> <br />
+    <div>Strength: <%= @brew.strength%></div> <br />
+    <div><%@brew.customers.each do |brew|%>
+<%= link_to customer.blend_name, brew%><br>
+<%end%> </div>

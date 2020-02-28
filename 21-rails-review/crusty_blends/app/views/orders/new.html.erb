@@ -1,0 +1,14 @@
+hey
+<%=form_for @order do |f|%>
+    which customer
+    <%=f.collection_select :customer_id, Customer.all, :id, :name%>
+    which coffee
+    <%=f.collection_select :brew_id, Brew.all, :id, :blend_name%>
+    <%=f.number_field :price, step:0.01%>
+
+    <%=f.submit "slap me"%>
+<%end%>
+
+
+
+

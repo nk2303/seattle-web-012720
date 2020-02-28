@@ -1,0 +1,9 @@
+<h1>Brew</h1>
+<% @brews.each do |brew| %>
+
+    <div>Blend name: <%= link_to brew.blend_name, brew %></div> <br />
+    <div>Origin: <%= brew.origin%></div> <br />
+    <div>Notes: <%= brew.notes%></div> <br />
+    <div>Strength: <%= brew.strength%></div> <br />
+
+<%end%>

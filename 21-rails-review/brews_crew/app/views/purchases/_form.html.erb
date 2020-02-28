@@ -1,0 +1,12 @@
+<%= form_for @purchase do |f| %>
+    <div>Customer Name: <%= f.text_field :customer_name%></div>
+    <div>Price: $$$$<%= f.number_field :price, step: 0.01 %></div>
+    <div><%= f.collection_select :brew_ids, Brew.all, :id, :blend_name %></div>
+    <%= f.submit %>
+<%end%>
+
+<% if flash[:notice] %>
+    <%= flash[:notice].each do |notice| %>
+        <%= notice %><br>
+    <%end %>
+<%end%>

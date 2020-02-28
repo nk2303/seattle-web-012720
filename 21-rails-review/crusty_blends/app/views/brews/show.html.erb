@@ -1,0 +1,6 @@
+<h1>crusty blends</h1>
+<%=@brew.blend_name%>
+<%@brew.customers.each do|crusty|%>
+    <%=crusty.updated_at%>
+
+<%end%>

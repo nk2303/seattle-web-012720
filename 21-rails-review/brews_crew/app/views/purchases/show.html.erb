@@ -1,0 +1,5 @@
+ <div>Customer name: <%= @purchase.customer_name %></div> <br />
+<div>Price: $$$$<%= @purchase.price%></div> <br />
+<div><%@purchase.brews.each do |brew|%>
+<%= link_to brew.blend_name, brew%><br>
+<%end%> </div>
