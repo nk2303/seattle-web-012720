@@ -1,9 +1,0 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  brew_id: 1
-  purchase_id: 1
-
-two:
-  brew_id: 1
-  purchase_id: 1
