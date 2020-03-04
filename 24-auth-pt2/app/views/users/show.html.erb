@@ -1,0 +1,7 @@
+Username: <%= @user.username %>
+
+<% if @user == current_user%>
+    <%= button_to 'DELETE', '/users/delete', method: :delete%>
+    <%= button_to 'LOGOUT', '/logout', method: :delete%>
+
+<%end%>
