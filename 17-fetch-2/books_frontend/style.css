@@ -1,0 +1,31 @@
+body{
+
+	background: pink;
+}
+
+.card{
+
+	display:inline-block;
+	border-style: double;
+	width: 310px;
+}
+
+#edit-form  {
+	display:none;
+}
+
+.delete {
+	background-color: red;
+	color: white;
+	height: 25px;
+}
+
+.edit {
+	background-color: lightskyblue;
+	color: white;
+	height: 25px;
+}
+
+img {
+	height:325px;
+}
