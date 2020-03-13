@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>My Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <h1>Astronaut Grooming Schedule</h1>
+      </div>
+      <div class="sidebar">
+        <h2>New Appointment</h2>
+        <form id="new-appointment-form">
+            <h4>Enter the new grooming info here:</h4>
+            <label>Astronaut Name:</label>
+            <input type="text" name="astronaut"/>
+            <label>Nation:</label>
+            <input type="text" name="nation" placeholder="USA"/>
+            <label>Desired Cleanliness:</label>
+            <input type="number" min="1" max="5" name="cleanliness" value="1"/>
+            <label>Date:</label>
+            <input type="date" name="date"/>
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="main">
+        <h3>Schedule</h3>
+        <div class="schedule row">
+          <!-- <div class="col col-md-2">
+            <div class="card">
+              <h4>Jeb Kermin</h4>
+              <p>USA</p>
+              <p>4</p>
+              <h5>Date: 1</h5>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="footer">
+        <h4>Details</h4>
+        <span id="details"></span>
+      </div>
+    </div>
+  </body>
+</html>
