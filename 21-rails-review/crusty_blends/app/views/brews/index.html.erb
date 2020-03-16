@@ -1,0 +1,11 @@
+<h1>hello, and welcome to my kitchen </h1>
+<%if flash[:messages]%>
+    <%=flash[:messages]%>
+<%end%>
+<%@brews.each do|bru|%>
+    <%=link_to bru.blend_name, bru%>
+    <%=link_to "destroy me, bruh", brew_path(bru), :method=>'delete'%>
+    <p>end of brew</p>
+<%end%>
+
+# link to show page, and delete for each

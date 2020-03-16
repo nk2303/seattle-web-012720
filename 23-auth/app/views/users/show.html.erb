@@ -1,0 +1,5 @@
+Username: <%= @user.username %>
+
+<% if @user.id == session[:user_id] %>
+    <%= button_to 'DELETE', '/users/delete', method: :delete%>
+<%end%>

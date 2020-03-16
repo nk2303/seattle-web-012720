@@ -1,0 +1,24 @@
+<h1> Taco menu </h1>
+<div>
+    <h3>Cart</h3>
+    <ol>
+    <% @cart_items.each do |taco| %>
+        <li><%=taco.meat%> - <%=taco.amount%> : $<%= taco.price%></li>
+    <%end%>
+    </ol>
+    <p>Total: $<%=@total%></p>
+</div>
+<div>
+<% @tacos.each do |taco|%> 
+    <li> Meat: <%= link_to taco.meat, taco %>,Zest: <%= taco.zest%>, Spice: <%= taco.spicy%> Price:$<%= taco.price%> 
+    <%=
+        button_to "Add to Cart", "/cart", method: :patch,
+        params: {tacos_id: taco.id}
+    %>
+      <%=
+        button_to "Add to Cart", "/cart", method: :delete,
+    %>
+
+    </li>
+<%end%>
+</div>
